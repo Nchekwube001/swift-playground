@@ -20,10 +20,21 @@ struct ContentView: View {
             .textFieldStyle(.roundedBorder)
                 .padding()
                 
-            Button("Done"){
+            Button{
                 print(text)
                 UIApplication.shared.onEndEditing()
-            }
+            }label: {
+                Text("Done")
+            }.padding().foregroundColor(Color.white).background(Color.black)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            
+            
+            Rectangle()
+                .foregroundColor(Color.clear)
+                .background(
+                    LinearGradient(colors: [.red,.green], startPoint: .leading, endPoint: .trailing)
+                )
+                .frame(width:200,height:250)
         }
         .padding()
     }
