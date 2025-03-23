@@ -15,8 +15,8 @@ struct Fruit: Identifiable{
 struct ScrollViewExample:View{
     var body: some View {
         ScrollView(.vertical,showsIndicators: false){
-            VStack {
-                ForEach(0..<20){index in
+            LazyVStack {
+                ForEach(0..<500){index in
                     ZStack{
                         LinearGradient(colors: [.red,.yellow], startPoint: .leading, endPoint: .trailing).cornerRadius(20)
                         Text("\(index+1)").font(.largeTitle)
