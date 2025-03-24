@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		155C2C022D9186510050F3B7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C2C012D9186510050F3B7 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		155C2BBF2D9090320050F3B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		155C2BAE2D9090300050F3B7 /* SwiftPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155C2BBE2D9090320050F3B7 /* SwiftPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		155C2BC82D9090320050F3B7 /* SwiftPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		155C2C012D9186510050F3B7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		155C2BA52D9090300050F3B7 = {
 			isa = PBXGroup;
 			children = (
+				155C2C012D9186510050F3B7 /* LoadingView.swift */,
 				155C2BB02D9090300050F3B7 /* SwiftPlayground */,
 				155C2BC12D9090320050F3B7 /* SwiftPlaygroundTests */,
 				155C2BCB2D9090320050F3B7 /* SwiftPlaygroundUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155C2C022D9186510050F3B7 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
