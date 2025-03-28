@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftPlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
-            FaceIdView()
+            SuperScrollView()
         }
     }
 }
