@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct SwiftPlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
-            FormView()
+            ChartsView()
         }
+        .modelContainer(for: SwiftDataItem.self)
     }
 }

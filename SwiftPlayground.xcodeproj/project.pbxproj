@@ -34,9 +34,22 @@
 		155C2C012D9186510050F3B7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		15ACADF52D9E000800A5A49D /* Exceptions for "SwiftPlayground" folder in "SwiftPlayground" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 155C2BAD2D9090300050F3B7 /* SwiftPlayground */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		155C2BB02D9090300050F3B7 /* SwiftPlayground */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				15ACADF52D9E000800A5A49D /* Exceptions for "SwiftPlayground" folder in "SwiftPlayground" target */,
+			);
 			path = SwiftPlayground;
 			sourceTree = "<group>";
 		};
@@ -201,6 +214,9 @@
 			);
 			mainGroup = 155C2BA52D9090300050F3B7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				155C2C962D9BF0210050F3B7 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 155C2BAF2D9090300050F3B7 /* Products */;
 			projectDirPath = "";
@@ -406,6 +422,7 @@
 				DEVELOPMENT_TEAM = 2T8B7ZJJ7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftPlayground/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "We nedd access to Face ID for smooth authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -436,6 +453,7 @@
 				DEVELOPMENT_TEAM = 2T8B7ZJJ7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftPlayground/Info.plist;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "We nedd access to Face ID for smooth authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -567,6 +585,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		155C2C962D9BF0210050F3B7 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 155C2BA62D9090300050F3B7 /* Project object */;
 }
