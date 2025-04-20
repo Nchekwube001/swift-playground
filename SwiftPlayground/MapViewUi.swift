@@ -25,12 +25,23 @@ struct MapViewUi : View {
             
             
             if let location = currentLocation {
-                Annotation(coordinate: location, content:{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(width: 40,height: 40)
-                        Image(systemName: "car")
-                            .foregroundColor(.white)
+                Annotation(
+                    coordinate: location,
+                    content:{
+                        ZStack{
+                            RoundedRectangle(
+                                cornerRadius: 10
+                            )
+                            .frame(
+                                width: 40,
+                                height: 40
+                            )
+                            Image(
+                                systemName: "car"
+                            )
+                            .foregroundColor(
+                                .white
+                            )
                     }
                 },
                            label: {
