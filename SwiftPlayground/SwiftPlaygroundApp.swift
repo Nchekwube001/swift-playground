@@ -13,9 +13,10 @@ struct SwiftPlaygroundApp: App {
     @StateObject private var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
-            InternetConnectivity()
-                .environment(\.isNetworkConnected, networkMonitor.isConnected)
-                .environment(\.connectionType, networkMonitor.connectionType)
+            LocationNotification()
+//            InternetConnectivity()
+//                .environment(\.isNetworkConnected, networkMonitor.isConnected)
+//                .environment(\.connectionType, networkMonitor.connectionType)
         }
         .modelContainer(for: SwiftDataItem.self)
     }
